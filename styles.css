@@ -80,6 +80,7 @@ Copiar código
     max-width: 90vw; /* Limitar el ancho máximo del contenedor */
 }
 
+
 .cv-container iframe {
     width: 100%; /* Ajusta el ancho del iframe al contenedor */
     height: 100%; /* Ajusta la altura del iframe */
@@ -129,4 +130,34 @@ main {
 .competencia {
     width: 48%; /* Para que ocupen el 48% del espacio disponible */
     text-align: left; /* Alinear el texto a la izquierda */
+}
+
+
+/* Estilo para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+    .cv-container iframe {
+        width: 100%; /* Ajusta el ancho del iframe al 100% del contenedor */
+        max-height: 60vh; /* Ajusta la altura del iframe en dispositivos móviles */
+    }
+}
+
+/* Estilo para pantallas medianas (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .cv-container iframe {
+        width: 90%; /* Ancho ligeramente menor para tablets */
+        max-height: 70vh; /* Altura ajustada para tablets */
+    }
+}
+
+/* Estilo para pantallas grandes (escritorio) */
+@media (min-width: 1025px) {
+    .cv-container iframe {
+        width: 80%; /* Ancho más ajustado para pantallas grandes */
+        max-height: 75vh; /* Altura ajustada para pantallas grandes */
+    }
+}
+
+img {
+    max-width: 100%; /* La imagen no se hará más grande que su contenedor */
+    height: auto; /* Mantener la proporción */
 }
