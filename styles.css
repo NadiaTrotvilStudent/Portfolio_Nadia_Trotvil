@@ -15,24 +15,65 @@ body {
     padding: 20px; /* Espaciado del contenedor principal */
 }
 
-/* Estilos del encabezado */
+/* Estilo para el header */
 header {
-    background: #333; /* Fondo del encabezado */
-    color: #fff; /* Color del texto */
-    padding: 10px 0;
-    text-align: center;
+    background-color: #ffffff; /* Fondo blanco */
+    color: #000000; /* Letras negras */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para separación */
+    text-align: center; /* Alinear el texto al centro */
 }
 
-/* Estilos de navegación */
-nav ul {
-    list-style: none; /* Elimina puntos de la lista */
-    padding: 0; /* Elimina padding */
+/* Estilo para el nav dentro del header */
+header nav ul {
+    list-style-type: none; /* Eliminar viñetas */
+    padding: 0; /* Eliminar relleno */
+    margin: 0; /* Eliminar márgenes */
+    display: flex; /* Utilizar flexbox para alinear horizontalmente */
+    justify-content: center; /* Centrar los elementos en el nav */
+    gap: 15px; /* Espaciado entre elementos */
 }
 
-nav ul li {
-    display: inline; /* Muestra elementos en línea */
-    margin-right: 15px; /* Espaciado entre enlaces */
+/* Estilo para los enlaces del nav */
+header nav ul li a {
+    color: #000000; /* Letras negras */
+    text-decoration: none; /* Eliminar subrayado */
+    font-weight: bold; /* Texto en negrita */
+    padding: 5px 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Animación para el cambio de fondo */
 }
+
+/* Efecto hover en los enlaces */
+header nav ul li a:hover {
+    background-color: #f0f0f0; /* Fondo gris claro al pasar el mouse */
+    color: #000000; /* Mantener el texto negro */
+}
+
+/* Estilo para el footer */
+footer {
+    background-color: #ffffff; /* Fondo blanco */
+    color: #000000; /* Letras negras */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para separación */
+    text-align: center; /* Alinear el texto al centro */
+    margin-top: 20px; /* Separación superior */
+}
+
+/* Enlaces del footer */
+footer a {
+    color: #000000; /* Color de los enlaces en el footer */
+    text-decoration: none; /* Eliminar subrayado de los enlaces */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Subrayar enlaces al pasar el mouse */
+}
+/* Estilos para los íconos de redes sociales */
+footer img {
+    margin-right: 10px; /* Espaciado entre íconos */
+}
+
 
 nav a {
     color: #fff; /* Color de los enlaces */
@@ -54,19 +95,7 @@ blockquote {
     font-style: italic; /* Estilo en cursiva */
 }
 
-/* Estilos del pie de página */
-footer {
-    text-align: center; /* Centra el texto */
-    margin-top: 20px; /* Espacio superior */
-    padding: 10px 0;
-    background: #333; /* Fondo del pie */
-    color: #fff; /* Color del texto */
-}
 
-/* Estilos para los íconos de redes sociales */
-footer img {
-    margin-right: 10px; /* Espaciado entre íconos */
-}
 
 
 Copiar código
